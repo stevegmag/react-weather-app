@@ -1,4 +1,4 @@
-Part 1: https://www.youtube.com/watch?v=204C9yNeOYI
+Part 1: https://www.youtube.com/watch?v=204C9yNeOYI<br>
 Part 2: https://www.youtube.com/watch?v=P0vsGO4svUM
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
