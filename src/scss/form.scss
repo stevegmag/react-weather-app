@@ -1,0 +1,24 @@
+form {
+    input {
+        margin-left: 1.25rem;
+        padding-left: .675rem;
+        padding-right: .675rem;
+        line-height: 2.5rem;
+        font-size: 1.655rem;
+        border: 0px solid gold;
+        
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+    button {
+        margin-left: 1.25rem;
+        padding: 0 2rem;
+        line-height: 2.5rem;
+        font-size: 1.655rem;
+        border: 0px solid gold;
+        background-color: gold;
+        border-radius: 5px;
+        outline: 0px;
+    }
+}
