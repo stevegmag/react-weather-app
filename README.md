@@ -1,5 +1,11 @@
+## Video Tutorial:
 Part 1: https://www.youtube.com/watch?v=204C9yNeOYI<br>
 Part 2: https://www.youtube.com/watch?v=P0vsGO4svUM
+
+## React - Sass:
+https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md#adding-a-css-preprocessor-sass-less-etc
+## React - SCSS:
+https://medium.com/@Connorelsea/using-sass-with-create-react-app-7125d6913760
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 

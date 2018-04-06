@@ -1,0 +1,14 @@
+
+
+@import './scss/main.scss';
+
+body {
+    background-color: #577A9E;
+    color: white;
+    
+    main {
+        position: relative;
+        padding: 25px;
+        z-index: 10;
+    } 
+}
