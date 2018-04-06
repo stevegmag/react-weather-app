@@ -7,6 +7,7 @@ https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/
 ## React - SCSS:
 https://medium.com/@Connorelsea/using-sass-with-create-react-app-7125d6913760
 
+##
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
