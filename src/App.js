@@ -4,7 +4,7 @@ import Titles     from      './components/Titles';
 import Form       from      './components/Form';
 import Weather    from      './components/Weather';
 
-import './App.css';
+import './style.css';
 
 /* 
 * 
