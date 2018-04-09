@@ -3,32 +3,71 @@ import React, { Component } from 'react';
 class Weather extends Component {
   render() {
     return (
-      <div className="weather">
+      <div className="weather"> 
+      { this.props.error &&
+        <p className="error-msg"> 
+          { this.props.error }
+        </p>
+      }
+      { this.props.city && this.props.state && 
         <h2>
         Current Conditions for { this.props.city }, { this.props.state } <br />
         <span>Date / Time: { this.props.localtime }</span>
         { /* swap state field with pulldown generated from remote json */ }
         </h2>
+      }
 
-        { this.props.condition_icon && <img src={ this.props.condition_icon } />} <br />
-        { this.props.condition_text } <br />
+      { this.props.condition_icon && 
+        <span>
+        <img src={ this.props.condition_icon } />
+        </span>
+      }
+      { this.props.condition_text &&
+        <span>
+        { this.props.condition_text }  <br />
+        </span>
+      }
         
-        Temp: { this.props.temp_f } °<br />
+      { this.props.temp_f && 
+        <span>
+        Temp: { this.props.temp_f } °<br /> 
+        </span>
+      }
+      { this.props.feelslike_f &&
+        <span>
         Feels Like: { this.props.feelslike_f } °<br />
-        Precipitation (inches): { this.props.precip_in }" <br />
+        </span>
+      }
+      { this.props.precip_in &&
+        <span>
+        Precipitation (inches): { this.props.precip_in } <br />
+        </span>
+      }
+      { this.props.wind_mph &&
+        <span>
         Wind: { this.props.wind_mph } mph<br />
+        </span>
+      }
+      { this.props.wind_dir &&
+        <span>
         Wind Direction: { this.props.wind_dir } <br />
+        </span>
+      }
+      { this.props.vis_miles &&
+        <span>
         Vidibility: { this.props.vis_miles } mi<br />
-        { this.props.error }
+        </span>
+      }
 
-        <div classname="hide-me">
+      { this.props.humidity && 
+        <div clasclassNamesname="hide-me">
         
-        { this.props.humidity } <br />
-        { this.props.lat } <br />
-        { this.props.lon } <br />
-        { this.props.tz_id } <br />
+        Hummidity: { this.props.humidity } <br />
+        Lat: { this.props.lat } <br />
+        Lon: { this.props.lon } <br />
+        TimeZone: { this.props.tz_id } <br />
         </div>
-
+      }
       </div>
     );
   }

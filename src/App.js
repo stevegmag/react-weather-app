@@ -42,26 +42,49 @@ class App extends Component {
     const data = await api_call.json();
     console.log(data);
 
-    this.setState({
-      city:             data.location.name,
-      state:            data.location.region,
-      localtime:        data.location.localtime,
-      lat:              data.location.lat,
-      lon:              data.location.lon,
-      tz_id:            data.location.tz_id,
-      temperature:      data.current.temp_f,
-      humidity:         data.current.humidity,
-      condition_text:   data.current.condition.text,
-      condition_icon:   data.current.condition.icon,
-      feelslike_f:      data.current.feelslike_f,
-      temp_f:           data.current.temp_f,
-      precip_in:        data.current.precip_in,
-      wind_dir:         data.current.wind_dir,
-      wind_mph:         data.current.wind_mph,
-      vis_miles:        data.current.vis_miles,
-      error:            ""
-    });
-  }
+    if( city && state ) {
+
+      this.setState({
+        city:             data.location.name,
+        state:            data.location.region,
+        localtime:        data.location.localtime,
+        lat:              data.location.lat,
+        lon:              data.location.lon,
+        tz_id:            data.location.tz_id,
+        temperature:      data.current.temp_f,
+        humidity:         data.current.humidity,
+        condition_text:   data.current.condition.text,
+        condition_icon:   data.current.condition.icon,
+        feelslike_f:      data.current.feelslike_f,
+        temp_f:           data.current.temp_f,
+        precip_in:        data.current.precip_in,
+        wind_dir:         data.current.wind_dir,
+        wind_mph:         data.current.wind_mph,
+        vis_miles:        data.current.vis_miles,
+        error:            ""
+      });
+    } else {
+      this.setState({
+        city:             undefined,
+        state:            undefined,
+        localtime:        undefined,
+        lat:              undefined,
+        lon:              undefined,
+        tz_id:            undefined,
+        temperature:      undefined,
+        humidity:         undefined,
+        condition_text:   undefined,
+        condition_icon:   undefined,
+        feelslike_f:      undefined,
+        temp_f:           undefined,
+        precip_in:        undefined,
+        wind_dir:         undefined,
+        wind_mph:         undefined,
+        vis_miles:        undefined,
+        error:            "Please enter a City and State"
+      });
+  } //else
+}
   render() {
     return (
       <div className="App">
