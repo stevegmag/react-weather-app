@@ -43,7 +43,7 @@ class Weather extends Component {
         Precipitation (inches): { this.props.precip_in } <br />
         </span>
       }
-      { this.props.wind_mph &&
+      { (this.props.wind_mph || this.props.wind_mph ==0) &&
         <span>
         Wind: { this.props.wind_mph } mph<br />
         </span>
