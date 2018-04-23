@@ -77,3 +77,20 @@ body {
         font: normal normal normal 14px/1 font-awesome;
         font-size: 14px;
         border: 1px solid blue; }
+  body .left-pane {
+    float: left;
+    clear: left;
+    width: 50%;
+    height: 100%;
+    margin: 0 0 0 0;
+    padding: 25px;
+    outline: 1px solid white;
+    text-align: center; }
+  body .right-pane {
+    float: left;
+    clear: right;
+    width: 40%;
+    height: 100%;
+    margin: 0 0 0 0;
+    padding: 25px;
+    text-align: left; }

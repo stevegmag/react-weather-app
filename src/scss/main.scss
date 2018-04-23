@@ -102,4 +102,26 @@ body {
         } //a
     } //footer
 
+
+    .left-pane {
+        float: left;
+        clear: left;
+        width: 50%;
+        height: 100%;
+        margin: 0 0 0 0;
+        padding: 25px;
+        outline: 1px solid white;
+        text-align: center;
+    }
+
+    .right-pane {
+        float: left;
+        clear: right;
+        width: 40%;
+        height: 100%;
+        margin: 0 0 0 0;
+        padding: 25px;        
+        text-align: left;
+    }
+
 } //body

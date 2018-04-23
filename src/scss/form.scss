@@ -1,5 +1,6 @@
 form {
     input {
+        display: inline-block;
         margin-left: 1.25rem;
         padding-left: .675rem;
         padding-right: .675rem;
@@ -12,6 +13,8 @@ form {
         }
     }
     button {
+        display: inline-block;
+        margin-top: 1.25rem;
         margin-left: 1.25rem;
         padding: 0 2rem;
         line-height: 2.5rem;
@@ -20,5 +23,10 @@ form {
         background-color: gold;
         border-radius: 5px;
         outline: 0px;
+        
+        &:hover {
+            cursor: pointer;
+        }   
     }
+    
 }

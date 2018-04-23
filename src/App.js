@@ -88,28 +88,34 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Titles />
-        <Form getWeather={this.getWeather}/>
-        <Weather 
-          city              = {this.state.city}
-          state             = {this.state.state}
-          localtime         = {this.state.localtime}
-          lat               = {this.state.lat}
-          lon               = {this.state.lon}
-          tz_id             = {this.state.tz_id}
-          temperature       = {this.state.temperature}
-          humidity          = {this.state.humidity}
-          condition_text    = {this.state.condition_text}
-          condition_icon    = {this.state.condition_icon}
-          feelslike_f       = {this.state.feelslike_f}
-          temp_f            = {this.state.temp_f}
-          precip_in         = {this.state.precip_in}
-          wind_dir          = {this.state.wind_dir}
-          wind_mph          = {this.state.wind_mph}
-          vis_miles         = {this.state.vis_miles}
-          error             = {this.state.error}
-        
-        />
+
+        <div className="left-pane">
+          <Titles />
+          <Form getWeather={this.getWeather}/>
+        </div>
+
+        <div className="right-pane"> 
+          <Weather 
+            city              = {this.state.city}
+            state             = {this.state.state}
+            localtime         = {this.state.localtime}
+            lat               = {this.state.lat}
+            lon               = {this.state.lon}
+            tz_id             = {this.state.tz_id}
+            temperature       = {this.state.temperature}
+            humidity          = {this.state.humidity}
+            condition_text    = {this.state.condition_text}
+            condition_icon    = {this.state.condition_icon}
+            feelslike_f       = {this.state.feelslike_f}
+            temp_f            = {this.state.temp_f}
+            precip_in         = {this.state.precip_in}
+            wind_dir          = {this.state.wind_dir}
+            wind_mph          = {this.state.wind_mph}
+            vis_miles         = {this.state.vis_miles}
+            error             = {this.state.error}
+          
+          />
+        </div>
       </div>
     );
   }
