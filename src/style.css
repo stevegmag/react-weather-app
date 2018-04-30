@@ -2,104 +2,52 @@ body {
   background-color: #577A9E;
   color: white;
   text-align: center;
-  font-size: 16px; }
-  body main {
+  font-size: 16px;
+  background-image: url("https://dsx.weather.com/util/image/map/acttemp_1280x720.jpg?v=ap&w=1280&h=720&api=7db9fe61-7414-47b5-9871-e17d87b8b6a0");
+  background-repeat: no-repeat;
+  background-size: contain; }
+  body .main-container {
     position: relative;
+    width: 85%;
+    max-height: 85%;
+    margin: 10% auto;
     padding: 25px;
-    z-index: 10; }
-    body main .container-fluid {
-      margin-top: 80px;
-      position: relative;
-      text-align: center; }
-      body main .container-fluid ul {
-        width: auto;
-        margin: 0 0 0 0;
-        padding: 0 0 0 0; }
-        body main .container-fluid ul li {
-          width: auto;
-          margin: 0 0 0 0;
-          padding: 0 0 0 0; }
-  body header {
-    position: fixed;
-    top: 0px;
-    width: 100%;
-    height: 80px;
-    padding: 20px 0;
-    border-bottom: 2px solid gold;
-    outline: 0px;
-    background-color: #092B40;
-    text-align: center;
-    color: white;
-    z-index: 100; }
-    body header a.logo {
-      display: block;
-      width: 100%;
-      height: 50px;
-      margin: 0 0 0 0;
-      text-transform: uppercase;
-      color: white; }
-      body header a.logo:active, body header a.logo:hover {
-        text-decoration: none; }
-      body header a.logo img {
-        display: inline-block;
-        width: 50px;
-        height: 50px;
-        margin-left: 15px;
-        border: 0px solid #092B40;
-        border-radius: 25px; }
-    body header h1 {
-      font-size: 20px;
-      line-height: 50px; }
-  body footer {
-    position: fixed;
-    bottom: 0px;
-    width: 100%;
-    padding: 20px 0;
-    border-top: 2px solid gold;
-    outline: 0px;
-    background-color: #092B40;
-    text-align: center;
-    color: white;
-    z-index: 100; }
-    body footer a:link,
-    body footer a:visited,
-    body footer a:hover,
-    body footer a:active {
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px; }
+    body .main-container .left-pane,
+    body .main-container .left-col {
       display: inline-block;
-      margin: 15px 0;
-      text-decoration: none; }
-      body footer a:link .fa,
-      body footer a:visited .fa,
-      body footer a:hover .fa,
-      body footer a:active .fa {
-        display: inline-block;
-        width: 18px;
-        height: 18px;
-        font: normal normal normal 14px/1 font-awesome;
-        font-size: 14px;
-        border: 1px solid blue; }
-  body .left-pane,
-  body .left-col {
-    float: left;
-    clear: left;
-    width: 42%;
-    height: 100%;
-    margin: 0 0 0 0;
-    padding: 4%;
-    vertical-align: top;
-    text-align: center; }
-  body .right-pane,
-  body .right-col {
-    float: left;
-    clear: right;
-    width: 42%;
-    height: 100%;
-    margin: 0 0 0 0;
-    padding: 4%;
-    vertical-align: top;
-    text-align: left; }
-  body .right-col {
-    text-align: center; }
+      width: 35%;
+      height: 100%;
+      margin: 3% auto;
+      padding: 0 0 0 0;
+      vertical-align: top;
+      text-align: center; }
+    body .main-container .left-col {
+      text-align: center;
+      margin-left: 5%; }
+    body .main-container .right-pane,
+    body .main-container .right-col {
+      display: inline-block;
+      width: 42%;
+      height: 100%;
+      margin: 3% auto;
+      padding: 0 0 0 0;
+      vertical-align: top;
+      text-align: left; }
+    body .main-container .right-col {
+      text-align: center;
+      margin-right: 5%; }
+    body .main-container:after,
+    body .main-container .left-pane:after,
+    body .main-container .left-col:after
+.right-pane:after,
+    body .main-container .right-col:after {
+      content: 'top';
+      display: block;
+      float: none;
+      clear: both; }
 
 form input {
   display: inline-block;

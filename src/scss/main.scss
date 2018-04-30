@@ -3,132 +3,60 @@ body {
     color: white;
     text-align: center;
     font-size: 16px;
-    
-    main {
+    background-image: url('https://dsx.weather.com/util/image/map/acttemp_1280x720.jpg?v=ap&w=1280&h=720&api=7db9fe61-7414-47b5-9871-e17d87b8b6a0');
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    .main-container {
         position: relative;
+        width: 85%;
+        max-height: 85%;
+        margin:  10% auto;
         padding: 25px;
         z-index: 10;
-        
-        .container-fluid {
-            margin-top: 80px;
-            position: relative;
-            text-align: center;
-            
-            ul {
-                width: auto;
-                margin: 0 0 0 0;
-                padding: 0 0 0 0;
-                
-                li {
-                    width: auto;
-                    margin: 0 0 0 0;
-                    padding: 0 0 0 0;   
-                } // li
-            } // ul
-        } // container-fluid
-        
-    } //main
-    
-    header {
-        position: fixed;
-        top: 0px;
-        width: 100%;
-        height: 80px;
-        padding: 20px 0;
-        border-bottom: 2px solid gold;
-        outline: 0px;
-        background-color: #092B40;
-        text-align: center;
-        color: white;
-        z-index: 100;
-        
-        a.logo {
-            display: block;
-            width: 100%;
-            height: 50px;
-            margin: 0 0 0 0;
-            text-transform: uppercase;
-            color: white;
-            
-            &:active,
-            &:hover {
-                text-decoration: none;
-            } // &:active, &:hover
-            
-            img {
-                display: inline-block;
-                width: 50px;
-                height: 50px;
-                margin-left: 15px;
-                border: 0px solid #092B40;
-                border-radius: 25px;
-            } // img
-        } // logo
-        
-        h1 {
-            font-size: 20px;
-            line-height: 50px;
-        } // h1
-    } // header
-    
-    footer {
-        position: fixed;
-        bottom: 0px;
-        width: 100%;
-        padding: 20px 0;
-        border-top: 2px solid gold;
-        outline: 0px;
-        background-color: #092B40;
-        text-align: center;
-        color: white;
-        z-index: 100;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
 
-        a:link,
-        a:visited,
-        a:hover,
-        a:active {
+        .left-pane, 
+        .left-col {
             display: inline-block;
-            margin: 15px 0;
-            text-decoration: none;
+            width: 35%;
+            height: 100%;
+            margin: 3% auto;
+            padding: 0 0 0 0;
+            vertical-align: top;
+            text-align: center;
 
-            .fa {
-                display: inline-block;
-                width: 18px;
-                height: 18px;
-                font: normal normal normal 14px/1 font-awesome;
-                font-size: 14px;
-                border: 1px solid blue;
+        } // .left-pane 
+        .left-col {
+            text-align: center;
+            margin-left: 5%;
+        }
 
-            } // fa
-        } //a
-    } //footer
-
-
-    .left-pane,
-    .left-col {
-        float: left;
-        clear: left;
-        width: 42%;
-        height: 100%;
-        margin: 0 0 0 0;
-        padding: 4%;
-        vertical-align: top;
-        text-align: center;
-    } // .left-pane 
-
-    .right-pane,
-    .right-col {
-        float: left;
-        clear: right;
-        width: 42%;
-        height: 100%;
-        margin: 0 0 0 0;
-        padding: 4%;        
-        vertical-align: top;
-        text-align: left;
-    } // .right-pane
-    .right-col {
-        text-align: center;
-    }
-
+        .right-pane,
+        .right-col {
+            display: inline-block;
+            width: 42%;
+            height: 100%;
+            margin: 3% auto;
+            padding: 0 0 0 0;        
+            vertical-align: top;
+            text-align: left;
+        } // .right-pane
+        .right-col {
+            text-align: center;
+            margin-right: 5%;
+        }
+        &:after,
+        .left-pane:after,
+        .left-col:after
+        .right-pane:after,
+        .right-col:after {
+            content: 'top';
+            display: block;
+            float: none;
+            clear: both;
+        }
+    } // .main-container
+    
 } //body

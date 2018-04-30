@@ -24,7 +24,7 @@ class Weather extends Component {
         { this.props.condition_icon && this.props.condition_text &&
           <div className="condition-details">
             <span className="condition-icon">
-            <img src={ this.props.condition_icon } /><br />
+            <img src={ this.props.condition_icon } alt={ this.props.condition_text } /><br />
             </span>
         
             <span className="condition-text">
@@ -40,12 +40,12 @@ class Weather extends Component {
         }
 
         <div className="left-col">
-          { (this.props.precip_in || this.props.precip_in ==0) &&
+          { (this.props.precip_in || this.props.precip_in === 0) &&
             <span>
             Precipitation: { this.props.precip_in }" <br />
             </span>
           }
-          { (this.props.wind_mph || this.props.wind_mph ==0) &&
+          { (this.props.wind_mph || this.props.wind_mph === 0) &&
             <span>
             Wind: { this.props.wind_mph } mph<br />
             </span>
