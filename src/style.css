@@ -1,7 +1,8 @@
 body {
   background-color: #577A9E;
   color: white;
-  text-align: center; }
+  text-align: center;
+  font-size: 16px; }
   body main {
     position: relative;
     padding: 25px;
@@ -63,53 +64,58 @@ body {
     body footer a:link,
     body footer a:visited,
     body footer a:hover,
-    body footer a:actie {
+    body footer a:active {
       display: inline-block;
       margin: 15px 0;
       text-decoration: none; }
       body footer a:link .fa,
       body footer a:visited .fa,
       body footer a:hover .fa,
-      body footer a:actie .fa {
+      body footer a:active .fa {
         display: inline-block;
         width: 18px;
         height: 18px;
         font: normal normal normal 14px/1 font-awesome;
         font-size: 14px;
         border: 1px solid blue; }
-  body .left-pane {
+  body .left-pane,
+  body .left-col {
     float: left;
     clear: left;
-    width: 50%;
+    width: 42%;
     height: 100%;
     margin: 0 0 0 0;
-    padding: 25px;
-    outline: 1px solid white;
+    padding: 4%;
+    vertical-align: top;
     text-align: center; }
-  body .right-pane {
+  body .right-pane,
+  body .right-col {
     float: left;
     clear: right;
-    width: 40%;
+    width: 42%;
     height: 100%;
     margin: 0 0 0 0;
-    padding: 25px;
+    padding: 4%;
+    vertical-align: top;
     text-align: left; }
+  body .right-col {
+    text-align: center; }
 
 form input {
   display: inline-block;
-  margin-left: 1.25rem;
+  margin-top: 1.25rem;
   padding-left: .675rem;
   padding-right: .675rem;
   line-height: 2.5rem;
   font-size: 1.655rem;
-  border: 0px solid gold; }
-  form input:first-child {
-    margin-left: 0; }
+  border: 0px solid gold;
+  border-radius: 3px;
+  outline: 0px; }
 
 form button {
   display: inline-block;
-  margin-top: 1.25rem;
-  margin-left: 1.25rem;
+  float: none;
+  margin: 1.25rem auto;
   padding: 0 2rem;
   line-height: 2.5rem;
   font-size: 1.655rem;
@@ -117,8 +123,32 @@ form button {
   background-color: gold;
   border-radius: 5px;
   outline: 0px; }
+  form button:hover {
+    cursor: pointer; }
 
 .weather h2 {
   text-align: center; }
   .weather h2 span {
     font-size: .875rem; }
+
+.weather .condition-details {
+  display: inline-block;
+  width: 50%;
+  text-align: center; }
+  .weather .condition-details .condition-icon {
+    text-align: center;
+    width: 4rem; }
+  .weather .condition-details .condition-text {
+    text-align: center;
+    font-size: 2rem; }
+
+.weather .current-temp {
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+  vertical-align: top;
+  font-size: 1.75rem; }
+  .weather .current-temp .current-temp-val {
+    text-align: center;
+    vertical-align: top;
+    font-size: 4rem; }

@@ -1,21 +1,19 @@
 form {
     input {
         display: inline-block;
-        margin-left: 1.25rem;
+        margin-top: 1.25rem;
         padding-left: .675rem;
         padding-right: .675rem;
         line-height: 2.5rem;
         font-size: 1.655rem;
         border: 0px solid gold;
-        
-        &:first-child {
-            margin-left: 0;
-        }
-    }
+        border-radius: 3px;
+        outline: 0px;
+    } // input
     button {
         display: inline-block;
-        margin-top: 1.25rem;
-        margin-left: 1.25rem;
+        float: none;
+        margin: 1.25rem auto;
         padding: 0 2rem;
         line-height: 2.5rem;
         font-size: 1.655rem;
@@ -26,7 +24,6 @@ form {
         
         &:hover {
             cursor: pointer;
-        }   
-    }
-    
-}
+        } // &:hover
+    } // button
+} // form

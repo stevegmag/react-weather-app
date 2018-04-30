@@ -2,6 +2,7 @@ body {
     background-color: #577A9E;
     color: white;
     text-align: center;
+    font-size: 16px;
     
     main {
         position: relative;
@@ -22,8 +23,8 @@ body {
                     width: auto;
                     margin: 0 0 0 0;
                     padding: 0 0 0 0;   
-                }
-            }
+                } // li
+            } // ul
         } // container-fluid
         
     } //main
@@ -52,7 +53,7 @@ body {
             &:active,
             &:hover {
                 text-decoration: none;
-            }
+            } // &:active, &:hover
             
             img {
                 display: inline-block;
@@ -67,7 +68,7 @@ body {
         h1 {
             font-size: 20px;
             line-height: 50px;
-        }
+        } // h1
     } // header
     
     footer {
@@ -85,7 +86,7 @@ body {
         a:link,
         a:visited,
         a:hover,
-        a:actie {
+        a:active {
             display: inline-block;
             margin: 15px 0;
             text-decoration: none;
@@ -103,25 +104,31 @@ body {
     } //footer
 
 
-    .left-pane {
+    .left-pane,
+    .left-col {
         float: left;
         clear: left;
-        width: 50%;
+        width: 42%;
         height: 100%;
         margin: 0 0 0 0;
-        padding: 25px;
-        outline: 1px solid white;
+        padding: 4%;
+        vertical-align: top;
         text-align: center;
-    }
+    } // .left-pane 
 
-    .right-pane {
+    .right-pane,
+    .right-col {
         float: left;
         clear: right;
-        width: 40%;
+        width: 42%;
         height: 100%;
         margin: 0 0 0 0;
-        padding: 25px;        
+        padding: 4%;        
+        vertical-align: top;
         text-align: left;
+    } // .right-pane
+    .right-col {
+        text-align: center;
     }
 
 } //body

@@ -1,7 +1,8 @@
 body {
   background-color: #577A9E;
   color: white;
-  text-align: center; }
+  text-align: center;
+  font-size: 16px; }
   body main {
     position: relative;
     padding: 25px;
@@ -63,34 +64,39 @@ body {
     body footer a:link,
     body footer a:visited,
     body footer a:hover,
-    body footer a:actie {
+    body footer a:active {
       display: inline-block;
       margin: 15px 0;
       text-decoration: none; }
       body footer a:link .fa,
       body footer a:visited .fa,
       body footer a:hover .fa,
-      body footer a:actie .fa {
+      body footer a:active .fa {
         display: inline-block;
         width: 18px;
         height: 18px;
         font: normal normal normal 14px/1 font-awesome;
         font-size: 14px;
         border: 1px solid blue; }
-  body .left-pane {
+  body .left-pane,
+  body .left-col {
     float: left;
     clear: left;
-    width: 50%;
+    width: 42%;
     height: 100%;
     margin: 0 0 0 0;
-    padding: 25px;
-    outline: 1px solid white;
+    padding: 4%;
+    vertical-align: top;
     text-align: center; }
-  body .right-pane {
+  body .right-pane,
+  body .right-col {
     float: left;
     clear: right;
-    width: 40%;
+    width: 42%;
     height: 100%;
     margin: 0 0 0 0;
-    padding: 25px;
+    padding: 4%;
+    vertical-align: top;
     text-align: left; }
+  body .right-col {
+    text-align: center; }

@@ -4,19 +4,35 @@
 
         span {
             font-size: .875rem;
-        }
-    }
-    .condition-icon {
-        font-size: 4rem;
-    }
-    .condition-text {
-        font-size: 2rem;
-    }
+        } //span
+    } // h2
+
+    .condition-details {
+        display: inline-block;
+        width: 50%;
+        text-align: center;
+
+        .condition-icon {
+            text-align: center;
+            width: 4rem;
+        } // .condition-icon
+        .condition-text {
+            text-align: center;
+            font-size: 2rem;
+        } // .condition-text
+    } // .condition-details
+
     .current-temp {
+        display: inline-block;
+        width: 50%;
+        text-align: center;
+        vertical-align: top;
         font-size: 1.75rem;
 
         .current-temp-val {
+            text-align: center;
+            vertical-align: top;
             font-size: 4rem;
-        }
-    }
-}
+        } // .current-temp-val
+    } // .current-temp
+} // .weather

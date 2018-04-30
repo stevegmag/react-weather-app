@@ -5,8 +5,8 @@ class Form extends Component {
     return (
       <div className="form ">
         <form onSubmit={this.props.getWeather}>  
-            <input type="text" name="city" placeholder="City..." />
-            <input type="text" name="state" placeholder="State..." />
+            <input type="text" name="city" placeholder="City..." /><br />
+            <input type="text" name="state" placeholder="State..." /><br />
             <button>Get weather</button>
         </form>
       </div>
